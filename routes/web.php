@@ -32,6 +32,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/mypage', function () {
     return Inertia::render('mankai_main/mypage');
 })->name('mypage');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/login', function () {
-    return Inertia::render('mankai_main/login');
-})->name('login');
+Route::middleware(['auth:sanctum', 'verified'])->get('/login_mankai', function () {
+    return Inertia::render('mankai_main/login_mankai');
+})->name('login_mankai');
